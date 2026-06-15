@@ -93,6 +93,9 @@ export function ProductCardMedia({ images, thumbnail, title }: ProductCardMediaP
             onClick={(event) => goToImage(event, index)}
           />
         ))}
+        <span className="product-card__slider-count" aria-hidden="true">
+          {activeIndex + 1}/{galleryImages.length}
+        </span>
       </div>
     </div>
   );
